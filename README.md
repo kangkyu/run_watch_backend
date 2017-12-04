@@ -1,5 +1,5 @@
 ```
-curl 'http://localhost:3000/episodes'
+curl 'http://localhost:3000/episodes' -H 'Authorization: Token token=abc...'
 
 ```
 
