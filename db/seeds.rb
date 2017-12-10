@@ -7,8 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Episode.create([
     {
-      title: "런닝맨 타임스퀘어",
+      title: "영등포 타임스퀘어",
       description: "이효리 황정음",
       number: 1
+    },
+    {
+      title: "수원 월드컵 경기장",
+      description: "이천희 구하라 송지효",
+      number: 2
     }
   ])
+
+User.create
