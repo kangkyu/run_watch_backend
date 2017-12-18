@@ -1,9 +1,18 @@
+# Run-Watch Backend
+
+## Endpoints
+
 ```
 curl 'http://localhost:3000/episodes' -H 'Authorization: Token token=abc...'
+curl 'http://localhost:3000/episodes/1' -H 'Authorization: Token token=abc...'
+curl -X PUT "http://localhost:3000/episodes/1" -d "{\"title\":\"Times Square\"}" -H "Content-Type: application/json" -H "Authorization: Token token=abc..."
 ```
 
-# TODO
+## TODO
 
 + Make endpoints authenticated
 + Add more endpoints
-+ write tests
++ write test code
++ build a client app
++ expire and refresh token
++ use client key and client secret

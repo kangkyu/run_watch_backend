@@ -6,6 +6,15 @@ class EpisodesController < ApplicationController
     @episodes = Episode.all
   end
 
+  def show
+    @episode = Episode.find(params[:id])
+  end
+
+  def update
+    @episode = Episode.find(params[:id])
+    @episode.update params.require(:episode).permit!
+  end
+
 protected
 
   def ensure_authenticated
