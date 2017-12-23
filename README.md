@@ -5,6 +5,7 @@
 ```
 curl 'http://localhost:3000/episodes' -H 'Authorization: Token token=abc...'
 curl 'http://localhost:3000/episodes/1' -H 'Authorization: Token token=abc...'
+curl -X POST "http://localhost:3000/episodes" -d "{\"title\":\"New Episode\",\"number\":\"3\"}" -H "Content-Type: application/json" -H "Authorization: Token token=abc..."
 curl -X PUT "http://localhost:3000/episodes/1" -d "{\"title\":\"Times Square\"}" -H "Content-Type: application/json" -H "Authorization: Token token=abc..."
 ```
 

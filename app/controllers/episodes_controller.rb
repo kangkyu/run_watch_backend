@@ -23,6 +23,15 @@ class EpisodesController < ApplicationController
     end
   end
 
+  def create
+    @episode = Episode.new params.require(:episode).permit!
+    if @episode.save
+      head :created
+    else
+      render json: { message: @episode.errors.messages }, status: :unprocessable_entity
+    end
+  end
+
 protected
 
   def ensure_authenticated
