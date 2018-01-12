@@ -1,4 +1,4 @@
-class EpisodesController < ApplicationController
+class Api::V1::EpisodesController < ActionController::API
 
   before_action :ensure_authenticated
 
