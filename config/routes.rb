@@ -6,5 +6,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :episodes
+  resources :episodes, except: :show
+  resource :session, only: [:new, :create, :destroy]
+  root 'episodes#index'
 end

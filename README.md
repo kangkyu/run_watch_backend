@@ -18,4 +18,4 @@ curl -X PUT "http://localhost:3000/api/episodes/1" -d "{\"title\":\"Times Square
 + expire and refresh token
 + use client key and client secret
 + deploy to Heroku
-+ add Admin model and login
++ ~~add Admin model and login~~
