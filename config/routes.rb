@@ -8,5 +8,8 @@ Rails.application.routes.draw do
 
   resources :episodes, except: :show
   resource :session, only: [:new, :create, :destroy]
+  resources :users, only: :show do
+    post :regenerate_token
+  end
   root 'episodes#index'
 end

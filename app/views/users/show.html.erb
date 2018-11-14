@@ -1,0 +1,8 @@
+<%= @user.attributes %>
+
+<%= button_to 'Regenerate Token', user_regenerate_token_path(@user) %>
+
+<footer>
+  <br/>
+  <%= link_to_if signed_in?, 'Log Out', session_path, method: :delete %>
+</footer>
